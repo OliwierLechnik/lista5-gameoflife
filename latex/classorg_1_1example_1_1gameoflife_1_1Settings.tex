@@ -1,0 +1,68 @@
+\doxysection{org.\+example.\+gameoflife.\+Settings Class Reference}
+\hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings}{}\label{classorg_1_1example_1_1gameoflife_1_1Settings}\index{org.example.gameoflife.Settings@{org.example.gameoflife.Settings}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Settings_a1b18ed684a7f9084b596fd64a04ff7a0}{calculate\+Dimensions}} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a3ff4a9352c529061dc5394062f6d5a59}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a3ff4a9352c529061dc5394062f6d5a59} 
+int {\bfseries get\+Scene\+Width} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a7c101913f85c22c398fefdebf6349060}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a7c101913f85c22c398fefdebf6349060} 
+int {\bfseries get\+Scene\+Height} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a8e9ab21f283a350f78805c453f9fa6d5}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a8e9ab21f283a350f78805c453f9fa6d5} 
+void {\bfseries set\+Columns} (int columns)
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a3e79789608bb019a9f119e060b8e34cd}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a3e79789608bb019a9f119e060b8e34cd} 
+void {\bfseries set\+Rows} (int rows)
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a3416cdd4df806c52958ebb828838e597}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a3416cdd4df806c52958ebb828838e597} 
+void {\bfseries set\+Probability} (double probability)
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a8a3c402f4ce631ba6b6f635a4da11b32}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a8a3c402f4ce631ba6b6f635a4da11b32} 
+void {\bfseries set\+Speed} (int speed)
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a2fe041439c68b45c05fa929a89daeaca}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a2fe041439c68b45c05fa929a89daeaca} 
+int {\bfseries get\+Columns} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a1c9e356eeeee822870303aa9750e706b}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a1c9e356eeeee822870303aa9750e706b} 
+int {\bfseries get\+Rows} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_ac8d466bc63694ab9e2865e763b8ea66d}\label{classorg_1_1example_1_1gameoflife_1_1Settings_ac8d466bc63694ab9e2865e763b8ea66d} 
+double {\bfseries get\+Probability} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_ab721cee66202061273f2b344fd0a826a}\label{classorg_1_1example_1_1gameoflife_1_1Settings_ab721cee66202061273f2b344fd0a826a} 
+int {\bfseries get\+Speed} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_ac1f4b9a9250eea1810dd14809b0a1af2}\label{classorg_1_1example_1_1gameoflife_1_1Settings_ac1f4b9a9250eea1810dd14809b0a1af2} 
+int {\bfseries get\+Cell\+Width} ()
+\item 
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_aa63709c358d6adeedc0c6a6f09dc810d}\label{classorg_1_1example_1_1gameoflife_1_1Settings_aa63709c358d6adeedc0c6a6f09dc810d} 
+int {\bfseries get\+Cell\+Height} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Settings}{Settings}} \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Settings_a4ad7abca83f70b62f1375ae692ca7fbc}{get\+Settings}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a1b18ed684a7f9084b596fd64a04ff7a0}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a1b18ed684a7f9084b596fd64a04ff7a0} 
+\index{org.example.gameoflife.Settings@{org.example.gameoflife.Settings}!calculateDimensions@{calculateDimensions}}
+\index{calculateDimensions@{calculateDimensions}!org.example.gameoflife.Settings@{org.example.gameoflife.Settings}}
+\doxysubsubsection{\texorpdfstring{calculateDimensions()}{calculateDimensions()}}
+{\footnotesize\ttfamily void org.\+example.\+gameoflife.\+Settings.\+calculate\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the size of each cell based on the preferred dimensions of the grid. This method ensures that cells fit pixel-\/perfect within the user interface. \Hypertarget{classorg_1_1example_1_1gameoflife_1_1Settings_a4ad7abca83f70b62f1375ae692ca7fbc}\label{classorg_1_1example_1_1gameoflife_1_1Settings_a4ad7abca83f70b62f1375ae692ca7fbc} 
+\index{org.example.gameoflife.Settings@{org.example.gameoflife.Settings}!getSettings@{getSettings}}
+\index{getSettings@{getSettings}!org.example.gameoflife.Settings@{org.example.gameoflife.Settings}}
+\doxysubsubsection{\texorpdfstring{getSettings()}{getSettings()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Settings}{Settings}} org.\+example.\+gameoflife.\+Settings.\+get\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Singleton accessor that ensures consistent simulation settings across the entire program. This method provides a centralized point of configuration for the cellular automaton. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/gameoflife/Settings.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.example.gameoflife","l":"App"},{"p":"org.example.gameoflife","l":"Cell"},{"p":"org.example.gameoflife","l":"EventController"},{"p":"org.example.gameoflife","l":"Grid"},{"p":"org.example.gameoflife","l":"RandomUtil"},{"p":"org.example.gameoflife","l":"Settings"}];updateSearchResults();

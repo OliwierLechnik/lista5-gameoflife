@@ -1,0 +1,92 @@
+\doxysection{org.\+example.\+gameoflife.\+Cell Class Reference}
+\hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell}{}\label{classorg_1_1example_1_1gameoflife_1_1Cell}\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell_a14e3c8d5e97f6109ae29775b23389389}{Cell}} (int ID)
+\item 
+synchronized Color \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell_ad6f260bf1a7deda406f7acc539352453}{read\+Write\+Color}} (Color new\+Color)
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell_ac4cc178843c65be5948d49b1a8e9d504}{add\+Neighbor}} (\mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell}{Cell}} cell)
+\item 
+boolean \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell_a1139a271c2090fab4eb9e30ee8e45f0c}{is\+Not\+Frozen}} ()
+\item 
+void \mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell_aba5d4077de57fb3321dde32b112e4514}{switch\+State}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell_a14e3c8d5e97f6109ae29775b23389389}\label{classorg_1_1example_1_1gameoflife_1_1Cell_a14e3c8d5e97f6109ae29775b23389389} 
+\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection{\texorpdfstring{Cell()}{Cell()}}
+{\footnotesize\ttfamily org.\+example.\+gameoflife.\+Cell.\+Cell (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructs a new Cell instance with a unique ID, initial state, and random color. The constructor initializes the cell with the following properties\+:
+\begin{DoxyItemize}
+\item The unique identifier of the cell is set to the provided ID.
+\item The cell\textquotesingle{}s state is set to active (not frozen).
+\item The loop thread is initialized as null.
+\item An empty list of neighboring cells is created.
+\item The cell\textquotesingle{}s color is set to a random RGB value.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & The unique identifier for the new cell. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell_ac4cc178843c65be5948d49b1a8e9d504}\label{classorg_1_1example_1_1gameoflife_1_1Cell_ac4cc178843c65be5948d49b1a8e9d504} 
+\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}!addNeighbor@{addNeighbor}}
+\index{addNeighbor@{addNeighbor}!org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection{\texorpdfstring{addNeighbor()}{addNeighbor()}}
+{\footnotesize\ttfamily void org.\+example.\+gameoflife.\+Cell.\+add\+Neighbor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classorg_1_1example_1_1gameoflife_1_1Cell}{Cell}}}]{cell }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a neighboring cell to the list of neighbors. This method is used to maintain a list of adjacent cells for color calculation purposes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cell} & The neighboring cell to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell_a1139a271c2090fab4eb9e30ee8e45f0c}\label{classorg_1_1example_1_1gameoflife_1_1Cell_a1139a271c2090fab4eb9e30ee8e45f0c} 
+\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}!isNotFrozen@{isNotFrozen}}
+\index{isNotFrozen@{isNotFrozen}!org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection{\texorpdfstring{isNotFrozen()}{isNotFrozen()}}
+{\footnotesize\ttfamily boolean org.\+example.\+gameoflife.\+Cell.\+is\+Not\+Frozen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the cell is currently not frozen. This method is typically used to determine if the cell can participate in color updates.
+
+\begin{DoxyReturn}{Returns}
+true if the cell is not frozen, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell_ad6f260bf1a7deda406f7acc539352453}\label{classorg_1_1example_1_1gameoflife_1_1Cell_ad6f260bf1a7deda406f7acc539352453} 
+\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}!readWriteColor@{readWriteColor}}
+\index{readWriteColor@{readWriteColor}!org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection{\texorpdfstring{readWriteColor()}{readWriteColor()}}
+{\footnotesize\ttfamily synchronized Color org.\+example.\+gameoflife.\+Cell.\+read\+Write\+Color (\begin{DoxyParamCaption}\item[{Color}]{new\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Performs a read and/or write operation on the cell\textquotesingle{}s color. If a new color is provided, it updates the cell\textquotesingle{}s color with the new value. Regardless of the update, it returns the previous color of the cell.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Color} & The new color to be set for the cell; if null, no new color is set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The previous color of the cell before any update. 
+\end{DoxyReturn}
+\Hypertarget{classorg_1_1example_1_1gameoflife_1_1Cell_aba5d4077de57fb3321dde32b112e4514}\label{classorg_1_1example_1_1gameoflife_1_1Cell_aba5d4077de57fb3321dde32b112e4514} 
+\index{org.example.gameoflife.Cell@{org.example.gameoflife.Cell}!switchState@{switchState}}
+\index{switchState@{switchState}!org.example.gameoflife.Cell@{org.example.gameoflife.Cell}}
+\doxysubsubsection{\texorpdfstring{switchState()}{switchState()}}
+{\footnotesize\ttfamily void org.\+example.\+gameoflife.\+Cell.\+switch\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Toggles the frozen state of the cell and prints the state change to the console. If the cell becomes frozen, it prints "{}\+Stop\+: \mbox{[}\+ID\mbox{]}"{}. If the cell becomes active, it prints "{}\+Start\+: \mbox{[}\+ID\mbox{]}"{}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/org/example/gameoflife/Cell.\+java\end{DoxyCompactItemize}
